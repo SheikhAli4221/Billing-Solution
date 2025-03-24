@@ -1,6 +1,6 @@
 ﻿namespace Billing_Solution
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             button1 = new Button();
             label1 = new Label();
             maskedTextBox1 = new MaskedTextBox();
@@ -110,7 +110,7 @@
             label4.TabIndex = 10;
             label4.Text = "Enter your login details";
             // 
-            // Form1
+            // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -125,9 +125,9 @@
             Controls.Add(label1);
             Controls.Add(button1);
             Margin = new Padding(3, 2, 3, 2);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Name = "Login";
+            Text = "Login";
+            Load += Login_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -5,14 +5,14 @@ using System.Windows.Forms;
 
 namespace Billing_Solution
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
             MakeButtonRounded(button1); // Apply rounded shape to button1
         }
@@ -44,7 +44,11 @@ namespace Billing_Solution
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            // Open Admin form
+            Admin adminForm = new Admin();
+            adminForm.Show();
         }
 
         
