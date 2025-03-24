@@ -39,7 +39,7 @@
             // 
             button1.BackColor = Color.SlateBlue;
             button1.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(127, 146);
+            button1.Location = new Point(251, 146);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(175, 38);

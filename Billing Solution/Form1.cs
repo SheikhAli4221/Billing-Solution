@@ -9,7 +9,8 @@ namespace Billing_Solution
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();      //git commit -m "Initial commit"
+                
         }
 
         private void Form1_Load(object sender, EventArgs e)
