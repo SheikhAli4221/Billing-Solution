@@ -15,6 +15,10 @@ namespace Billing_Solution
         private void Admin_Load(object sender, EventArgs e)
         {
             MakePictureBoxRound(pictureBox1); // Ensure karo ke PictureBox ka name correct ho
+            MakePictureBoxRound(pictureBox2);
+            MakePictureBoxRound(pictureBox3);
+            MakePictureBoxRound(pictureBox4);
+            MakePictureBoxRound(pictureBox5);
         }
 
         private void MakePictureBoxRound(PictureBox picBox)
