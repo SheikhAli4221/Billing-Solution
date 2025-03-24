@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             button1 = new Button();
             label1 = new Label();
-            maskedTextBox1 = new MaskedTextBox();
-            maskedTextBox2 = new MaskedTextBox();
+            Username = new MaskedTextBox();
+            Password = new MaskedTextBox();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
@@ -63,19 +63,20 @@
             label1.Text = "Welcome to IBS";
             label1.Click += label1_Click;
             // 
-            // maskedTextBox1
+            // Username
             // 
-            maskedTextBox1.Location = new Point(209, 191);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(265, 23);
-            maskedTextBox1.TabIndex = 6;
+            Username.Location = new Point(209, 191);
+            Username.Name = "Username";
+            Username.Size = new Size(265, 23);
+            Username.TabIndex = 6;
+            Username.MaskInputRejected += maskedTextBox1_MaskInputRejected;
             // 
-            // maskedTextBox2
+            // Password
             // 
-            maskedTextBox2.Location = new Point(209, 243);
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(265, 23);
-            maskedTextBox2.TabIndex = 7;
+            Password.Location = new Point(209, 243);
+            Password.Name = "Password";
+            Password.Size = new Size(265, 23);
+            Password.TabIndex = 7;
             // 
             // label2
             // 
@@ -120,8 +121,8 @@
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(maskedTextBox2);
-            Controls.Add(maskedTextBox1);
+            Controls.Add(Password);
+            Controls.Add(Username);
             Controls.Add(label1);
             Controls.Add(button1);
             Margin = new Padding(3, 2, 3, 2);
@@ -136,8 +137,8 @@
 
         private Button button1;
         private Label label1;
-        private MaskedTextBox maskedTextBox1;
-        private MaskedTextBox maskedTextBox2;
+        private MaskedTextBox Username;
+        private MaskedTextBox Password;
         private Label label2;
         private Label label3;
         private Label label4;

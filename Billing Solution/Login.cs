@@ -44,13 +44,42 @@ namespace Billing_Solution
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            string username = Username.Text;  // MaskedTextBox for Username
+            string password = Password.Text;  // MaskedTextBox for Password
 
-            // Open Admin form
-            Admin adminForm = new Admin();
-            adminForm.Show();
+            // Role-Based Authentication Without Database
+            if (username == "admin" && password == "1234")
+            {
+                // Open Admin Form
+                Admin adminForm = new Admin();
+                adminForm.Show();
+                this.Hide(); // Hide Login Form
+            }
+            else if (username == "inventory" && password == "1234")
+            {
+                // Open Inventory Manager Form
+                InventoryManager invManagerForm = new InventoryManager();
+                invManagerForm.Show();
+                this.Hide();
+            }
+            else if (username == "sales" && password == "1234")
+            {
+                // Open Sales Manager Form
+                SalesMan salesManagerForm = new SalesMan();
+                salesManagerForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                // Invalid Credentials Message
+                MessageBox.Show("Invalid Username or Password", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }
