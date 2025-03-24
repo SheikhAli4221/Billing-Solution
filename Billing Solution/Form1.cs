@@ -15,8 +15,6 @@ namespace Billing_Solution
         private void Form1_Load(object sender, EventArgs e)
         {
             MakeButtonRounded(button1); // Apply rounded shape to button1
-            MakeButtonRounded(button2); // Apply rounded shape to button2
-            MakeButtonRounded(button3); // Apply rounded shape to button3
         }
 
         private void MakeButtonRounded(Button button)
@@ -49,14 +47,6 @@ namespace Billing_Solution
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

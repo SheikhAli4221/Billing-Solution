@@ -30,49 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
-            button3 = new Button();
-            button2 = new Button();
             label1 = new Label();
+            maskedTextBox1 = new MaskedTextBox();
+            maskedTextBox2 = new MaskedTextBox();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
             button1.BackColor = Color.SlateBlue;
             button1.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(127, 152);
+            button1.Location = new Point(150, 318);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(175, 38);
             button1.TabIndex = 0;
-            button1.Text = "Owner";
+            button1.Text = "Sign In";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.Control;
-            button3.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(127, 328);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(175, 38);
-            button3.TabIndex = 3;
-            button3.Text = "Inventory Manager";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.SlateBlue;
-            button2.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(127, 239);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.Size = new Size(175, 39);
-            button2.TabIndex = 4;
-            button2.Text = "Salesman";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
             // 
             // label1
             // 
@@ -86,6 +63,53 @@
             label1.Text = "Welcome to IBS";
             label1.Click += label1_Click;
             // 
+            // maskedTextBox1
+            // 
+            maskedTextBox1.Location = new Point(209, 191);
+            maskedTextBox1.Name = "maskedTextBox1";
+            maskedTextBox1.Size = new Size(265, 23);
+            maskedTextBox1.TabIndex = 6;
+            // 
+            // maskedTextBox2
+            // 
+            maskedTextBox2.Location = new Point(209, 243);
+            maskedTextBox2.Name = "maskedTextBox2";
+            maskedTextBox2.Size = new Size(265, 23);
+            maskedTextBox2.TabIndex = 7;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Copperplate Gothic Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(56, 192);
+            label2.Name = "label2";
+            label2.Size = new Size(130, 18);
+            label2.TabIndex = 8;
+            label2.Text = "UserId/Email";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Copperplate Gothic Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(56, 244);
+            label3.Name = "label3";
+            label3.Size = new Size(99, 18);
+            label3.TabIndex = 9;
+            label3.Text = "Password";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Copperplate Gothic Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(56, 126);
+            label4.Name = "label4";
+            label4.Size = new Size(347, 26);
+            label4.TabIndex = 10;
+            label4.Text = "Enter your login details";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -93,9 +117,12 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1192, 540);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(maskedTextBox2);
+            Controls.Add(maskedTextBox1);
             Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button3);
             Controls.Add(button1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
@@ -108,8 +135,11 @@
         #endregion
 
         private Button button1;
-        private Button button3;
-        private Button button2;
         private Label label1;
+        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox maskedTextBox2;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }
