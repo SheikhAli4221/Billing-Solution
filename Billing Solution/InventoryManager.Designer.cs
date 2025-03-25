@@ -28,18 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            checkBox1 = new CheckBox();
             SuspendLayout();
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(586, 184);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(101, 24);
+            checkBox1.TabIndex = 0;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
             // 
             // InventoryManager
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1192, 540);
+            ClientSize = new Size(1362, 720);
+            Controls.Add(checkBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "InventoryManager";
             Text = "InventoryManager";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private CheckBox checkBox1;
     }
 }
