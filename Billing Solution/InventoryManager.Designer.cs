@@ -34,7 +34,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(586, 184);
+            checkBox1.Location = new Point(187, 87);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(101, 24);
             checkBox1.TabIndex = 0;
