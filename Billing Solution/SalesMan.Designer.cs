@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            button1 = new Button();
             SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(407, 185);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 0;
+            button1.Text = "ben 10";
+            button1.UseVisualStyleBackColor = true;
             // 
             // SalesMan
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1192, 540);
+            ClientSize = new Size(1362, 720);
+            Controls.Add(button1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "SalesMan";
             Text = "SalesMan";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1;
     }
 }

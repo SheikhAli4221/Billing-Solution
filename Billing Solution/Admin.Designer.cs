@@ -42,10 +42,8 @@
             label3 = new Label();
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
-            splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -79,7 +77,6 @@
             // 
             // splitContainer1.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(button1);
             splitContainer1.Panel2.Paint += splitContainer1_Panel2_Paint;
             splitContainer1.Size = new Size(1362, 720);
             splitContainer1.SplitterDistance = 183;
@@ -216,15 +213,6 @@
             label1.TabIndex = 0;
             label1.Text = "Admin";
             // 
-            // button1
-            // 
-            button1.Location = new Point(397, 59);
-            button1.Name = "button1";
-            button1.Size = new Size(365, 71);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // Admin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -237,7 +225,6 @@
             Load += Admin_Load;
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel1.PerformLayout();
-            splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -263,6 +250,5 @@
         private PictureBox pictureBox3;
         private Label label4;
         private Label label7;
-        private Button button1;
     }
 }
