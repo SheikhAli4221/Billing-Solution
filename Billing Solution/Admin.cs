@@ -16,7 +16,7 @@ namespace Billing_Solution
         {
             MakePictureBoxRound(pictureBox1); // Ensure karo ke PictureBox ka name correct ho
             MakePictureBoxRound(pictureBox2);
-            MakePictureBoxRound(pictureBox);
+            MakePictureBoxRound(pictureBox3);
             MakePictureBoxRound(pictureBox4);
             MakePictureBoxRound(pictureBox5);
         }
