@@ -65,7 +65,7 @@ namespace Billing_Solution
             else if (username == "sales" && password == "1234")
             {
                 // Open Sales Manager Form
-                SalesMan salesManagerForm = new SalesMan();
+                SalesManDashboard salesManagerForm = new SalesManDashboard();
                 salesManagerForm.Show();
                 this.Hide();
             }
