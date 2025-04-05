@@ -34,12 +34,12 @@ namespace Billing_Solution
             e.Graphics.FillRectangle(Brushes.LightGray, e.ClipRectangle);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void pictureBox7_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }

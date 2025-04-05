@@ -30,38 +30,27 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Admin));
             splitContainer1 = new SplitContainer();
-            label7 = new Label();
-            pictureBox5 = new PictureBox();
-            label4 = new Label();
-            label6 = new Label();
-            pictureBox4 = new PictureBox();
-            label5 = new Label();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            label2 = new Label();
-            label3 = new Label();
             pictureBox1 = new PictureBox();
-            label1 = new Label();
-            panel1 = new Panel();
-            progressBar1 = new ProgressBar();
-            progressBar2 = new ProgressBar();
-            progressBar3 = new ProgressBar();
-            panel2 = new Panel();
-            progressBar4 = new ProgressBar();
-            progressBar5 = new ProgressBar();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox9 = new PictureBox();
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            pictureBox2 = new PictureBox();
+            button6 = new Button();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
-            splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
-            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // splitContainer1
@@ -74,143 +63,26 @@
             // splitContainer1.Panel1
             // 
             splitContainer1.Panel1.BackColor = Color.DimGray;
-            splitContainer1.Panel1.Controls.Add(button2);
-            splitContainer1.Panel1.Controls.Add(button1);
-            splitContainer1.Panel1.Controls.Add(label7);
-            splitContainer1.Panel1.Controls.Add(pictureBox5);
-            splitContainer1.Panel1.Controls.Add(label4);
-            splitContainer1.Panel1.Controls.Add(label6);
-            splitContainer1.Panel1.Controls.Add(pictureBox4);
-            splitContainer1.Panel1.Controls.Add(label5);
-            splitContainer1.Panel1.Controls.Add(pictureBox3);
             splitContainer1.Panel1.Controls.Add(pictureBox2);
-            splitContainer1.Panel1.Controls.Add(label2);
-            splitContainer1.Panel1.Controls.Add(label3);
+            splitContainer1.Panel1.Controls.Add(button6);
+            splitContainer1.Panel1.Controls.Add(button1);
+            splitContainer1.Panel1.Controls.Add(pictureBox7);
+            splitContainer1.Panel1.Controls.Add(pictureBox6);
             splitContainer1.Panel1.Controls.Add(pictureBox1);
-            splitContainer1.Panel1.Controls.Add(label1);
+            splitContainer1.Panel1.Controls.Add(pictureBox8);
+            splitContainer1.Panel1.Controls.Add(pictureBox9);
+            splitContainer1.Panel1.Controls.Add(button2);
+            splitContainer1.Panel1.Controls.Add(button3);
+            splitContainer1.Panel1.Controls.Add(button4);
+            splitContainer1.Panel1.Controls.Add(button5);
             // 
             // splitContainer1.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(panel1);
             splitContainer1.Panel2.Paint += splitContainer1_Panel2_Paint;
             splitContainer1.Size = new Size(1702, 900);
-            splitContainer1.SplitterDistance = 228;
+            splitContainer1.SplitterDistance = 284;
             splitContainer1.SplitterWidth = 6;
             splitContainer1.TabIndex = 0;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(54, 561);
-            label7.Margin = new Padding(4, 0, 4, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(125, 28);
-            label7.TabIndex = 6;
-            label7.Text = "Payments";
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(4, 429);
-            pictureBox5.Margin = new Padding(4, 5, 4, 5);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(41, 49);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 8;
-            pictureBox5.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(51, 531);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(111, 28);
-            label4.TabIndex = 5;
-            label4.Text = "Supplier";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(51, 446);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(161, 28);
-            label6.TabIndex = 9;
-            label6.Text = "Sales Report";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(4, 531);
-            pictureBox4.Margin = new Padding(4, 5, 4, 5);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(41, 49);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 6;
-            pictureBox4.TabStop = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(51, 349);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(185, 28);
-            label5.TabIndex = 7;
-            label5.Text = "View Inventory";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(4, 330);
-            pictureBox3.Margin = new Padding(4, 5, 4, 5);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(41, 49);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 4;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(4, 241);
-            pictureBox2.Margin = new Padding(4, 5, 4, 5);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(41, 49);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(28, 150);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(135, 28);
-            label2.TabIndex = 1;
-            label2.Text = "Main Menu";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(46, 251);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(178, 28);
-            label3.TabIndex = 3;
-            label3.Text = "Manage Users";
             // 
             // pictureBox1
             // 
@@ -224,91 +96,145 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // label1
+            // pictureBox6
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(110, 49);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(86, 28);
-            label1.TabIndex = 0;
-            label1.Text = "Admin";
+            pictureBox6.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(13, 236);
+            pictureBox6.Margin = new Padding(4, 5, 4, 5);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(41, 49);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 4;
+            pictureBox6.TabStop = false;
             // 
-            // panel1
+            // pictureBox7
             // 
-            panel1.Controls.Add(panel2);
-            panel1.Controls.Add(progressBar1);
-            panel1.Controls.Add(progressBar3);
-            panel1.Controls.Add(progressBar2);
-            panel1.Location = new Point(3, 20);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1462, 877);
-            panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
+            pictureBox7.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(13, 323);
+            pictureBox7.Margin = new Padding(4, 5, 4, 5);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(41, 49);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 15;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
-            // progressBar1
+            // pictureBox8
             // 
-            progressBar1.Location = new Point(185, 457);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(526, 119);
-            progressBar1.TabIndex = 0;
+            pictureBox8.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(13, 407);
+            pictureBox8.Margin = new Padding(4, 5, 4, 5);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(41, 49);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 13;
+            pictureBox8.TabStop = false;
             // 
-            // progressBar2
+            // pictureBox9
             // 
-            progressBar2.Location = new Point(527, 524);
-            progressBar2.Name = "progressBar2";
-            progressBar2.Size = new Size(526, 119);
-            progressBar2.TabIndex = 1;
-            // 
-            // progressBar3
-            // 
-            progressBar3.Location = new Point(165, 582);
-            progressBar3.Name = "progressBar3";
-            progressBar3.Size = new Size(526, 119);
-            progressBar3.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(progressBar5);
-            panel2.Controls.Add(progressBar4);
-            panel2.Location = new Point(51, 61);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(1047, 670);
-            panel2.TabIndex = 3;
-            // 
-            // progressBar4
-            // 
-            progressBar4.Location = new Point(158, 72);
-            progressBar4.Name = "progressBar4";
-            progressBar4.Size = new Size(608, 161);
-            progressBar4.TabIndex = 0;
-            // 
-            // progressBar5
-            // 
-            progressBar5.Location = new Point(232, 331);
-            progressBar5.Name = "progressBar5";
-            progressBar5.Size = new Size(515, 95);
-            progressBar5.TabIndex = 1;
+            pictureBox9.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(12, 486);
+            pictureBox9.Margin = new Padding(4, 5, 4, 5);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(41, 49);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 10;
+            pictureBox9.TabStop = false;
             // 
             // button1
             // 
-            button1.Location = new Point(46, 241);
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(109, 36);
             button1.Name = "button1";
-            button1.Size = new Size(166, 49);
-            button1.TabIndex = 2;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Size = new Size(111, 49);
+            button1.TabIndex = 22;
+            button1.Text = "Admin";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button5_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(46, 330);
+            button2.BackColor = Color.Transparent;
+            button2.BackgroundImageLayout = ImageLayout.None;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Location = new Point(0, 236);
             button2.Name = "button2";
-            button2.Size = new Size(166, 49);
-            button2.TabIndex = 10;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            button2.Size = new Size(322, 49);
+            button2.TabIndex = 23;
+            button2.Text = "Managing Users";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Transparent;
+            button3.BackgroundImageLayout = ImageLayout.None;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.Location = new Point(3, 323);
+            button3.Name = "button3";
+            button3.Size = new Size(284, 49);
+            button3.TabIndex = 24;
+            button3.Text = "Sales Report";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.Transparent;
+            button4.BackgroundImageLayout = ImageLayout.None;
+            button4.FlatStyle = FlatStyle.Popup;
+            button4.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.Location = new Point(0, 407);
+            button4.Name = "button4";
+            button4.Size = new Size(322, 49);
+            button4.TabIndex = 25;
+            button4.Text = "Supplier Payment";
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.Transparent;
+            button5.BackgroundImageLayout = ImageLayout.None;
+            button5.FlatStyle = FlatStyle.Popup;
+            button5.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button5.Location = new Point(0, 486);
+            button5.Name = "button5";
+            button5.Size = new Size(287, 49);
+            button5.TabIndex = 26;
+            button5.Text = "Inventory";
+            button5.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(13, 669);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(41, 49);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 27;
+            pictureBox2.TabStop = false;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.Transparent;
+            button6.BackgroundImageLayout = ImageLayout.None;
+            button6.FlatStyle = FlatStyle.Popup;
+            button6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button6.Location = new Point(0, 669);
+            button6.Name = "button6";
+            button6.Size = new Size(322, 49);
+            button6.TabIndex = 28;
+            button6.Text = "Exit";
+            button6.UseVisualStyleBackColor = false;
             // 
             // Admin
             // 
@@ -321,17 +247,14 @@
             Text = "Admin";
             Load += Admin_Load;
             splitContainer1.Panel1.ResumeLayout(false);
-            splitContainer1.Panel1.PerformLayout();
-            splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -339,25 +262,16 @@
 
         private SplitContainer splitContainer1;
         private PictureBox pictureBox1;
-        private Label label1;
-        private PictureBox pictureBox2;
-        private Label label3;
-        private Label label2;
-        private PictureBox pictureBox5;
-        private Label label6;
-        private PictureBox pictureBox4;
-        private Label label5;
-        private PictureBox pictureBox3;
-        private Label label4;
-        private Label label7;
-        private Panel panel1;
-        private Button button2;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox8;
         private Button button1;
-        private Panel panel2;
-        private ProgressBar progressBar5;
-        private ProgressBar progressBar4;
-        private ProgressBar progressBar1;
-        private ProgressBar progressBar3;
-        private ProgressBar progressBar2;
+        private Button button2;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private PictureBox pictureBox2;
+        private Button button6;
     }
 }
