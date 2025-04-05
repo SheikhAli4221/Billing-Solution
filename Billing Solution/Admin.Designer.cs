@@ -111,6 +111,7 @@
             button6.TabIndex = 28;
             button6.Text = "Exit";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button1
             // 
@@ -211,6 +212,7 @@
             button3.TabIndex = 24;
             button3.Text = "Sales Report";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -224,6 +226,7 @@
             button4.TabIndex = 25;
             button4.Text = "Supplier Payment";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -237,6 +240,7 @@
             button5.TabIndex = 26;
             button5.Text = "Inventory";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // Panel
             // 

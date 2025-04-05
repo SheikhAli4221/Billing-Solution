@@ -58,5 +58,27 @@ namespace Billing_Solution
         {
             LoadUserControl(new UC_ManagingUsers());
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new UC_SalesReport());
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new UC_Supplier());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new UC_Inventory());
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Login adminForm = new Login();
+            adminForm.Show();
+            this.Hide();
+        }
     }
 }
