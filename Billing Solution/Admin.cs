@@ -7,10 +7,15 @@ namespace Billing_Solution
 {
     public partial class Admin : Form
     {
+
+
+
         public Admin()
         {
             InitializeComponent();
         }
+
+
 
         private void Admin_Load(object sender, EventArgs e)
         {
@@ -19,6 +24,7 @@ namespace Billing_Solution
             MakePictureBoxRound(pictureBox3);
             MakePictureBoxRound(pictureBox4);
             MakePictureBoxRound(pictureBox5);
+            MakePictureBoxRound(pictureBox6);
         }
 
         private void MakePictureBoxRound(PictureBox picBox)
@@ -34,14 +40,23 @@ namespace Billing_Solution
             e.Graphics.FillRectangle(Brushes.LightGray, e.ClipRectangle);
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
+
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void LoadUserControl(UserControl uc)
         {
+            Panel.Controls.Clear();       // Clear old content
+            uc.Dock = DockStyle.Fill;                // Make it fill the panel
+            Panel.Controls.Add(uc);       // Add new control
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new UC_ManagingUsers());
         }
     }
 }
