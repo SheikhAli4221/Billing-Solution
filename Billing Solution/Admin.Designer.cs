@@ -92,7 +92,7 @@
             pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(74, 76);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -100,7 +100,7 @@
             // 
             pictureBox6.BackgroundImageLayout = ImageLayout.Center;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(13, 236);
+            pictureBox6.Location = new Point(4, 236);
             pictureBox6.Margin = new Padding(4, 5, 4, 5);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(41, 49);
@@ -112,7 +112,7 @@
             // 
             pictureBox7.BackgroundImageLayout = ImageLayout.Center;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(13, 323);
+            pictureBox7.Location = new Point(4, 323);
             pictureBox7.Margin = new Padding(4, 5, 4, 5);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(41, 49);
@@ -125,7 +125,7 @@
             // 
             pictureBox8.BackgroundImageLayout = ImageLayout.Center;
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(13, 407);
+            pictureBox8.Location = new Point(4, 407);
             pictureBox8.Margin = new Padding(4, 5, 4, 5);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(41, 49);
@@ -137,7 +137,7 @@
             // 
             pictureBox9.BackgroundImageLayout = ImageLayout.Center;
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(12, 486);
+            pictureBox9.Location = new Point(4, 486);
             pictureBox9.Margin = new Padding(4, 5, 4, 5);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(41, 49);
@@ -215,7 +215,7 @@
             // 
             pictureBox2.BackgroundImageLayout = ImageLayout.Center;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(13, 669);
+            pictureBox2.Location = new Point(4, 669);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(41, 49);
