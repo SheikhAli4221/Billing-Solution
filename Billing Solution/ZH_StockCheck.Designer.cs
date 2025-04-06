@@ -1,6 +1,6 @@
 ﻿namespace Billing_Solution
 {
-    partial class UC_Inventory
+    partial class ZH_StockCheck
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,15 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
-            // 
-            // UC_Inventory
-            // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Name = "UC_Inventory";
-            Size = new Size(1342, 418);
-            ResumeLayout(false);
+            components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         }
 
         #endregion
