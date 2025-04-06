@@ -172,9 +172,9 @@
             // groupBoxSummary
             // 
             groupBoxSummary.Font = new Font("Cooper Black", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBoxSummary.Location = new Point(457, 321);
+            groupBoxSummary.Location = new Point(457, 309);
             groupBoxSummary.Name = "groupBoxSummary";
-            groupBoxSummary.Size = new Size(500, 150);
+            groupBoxSummary.Size = new Size(500, 192);
             groupBoxSummary.TabIndex = 3;
             groupBoxSummary.TabStop = false;
             groupBoxSummary.Text = "Invoice Summary";
