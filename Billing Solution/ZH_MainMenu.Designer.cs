@@ -58,10 +58,9 @@
             lbDashboard.FlatStyle = FlatStyle.Flat;
             lbDashboard.Font = new Font("Copperplate Gothic Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbDashboard.ForeColor = Color.Black;
-            lbDashboard.Location = new Point(-3, -70);
-            lbDashboard.Margin = new Padding(4, 0, 4, 0);
+            lbDashboard.Location = new Point(-2, -56);
             lbDashboard.Name = "lbDashboard";
-            lbDashboard.Size = new Size(435, 70);
+            lbDashboard.Size = new Size(348, 56);
             lbDashboard.TabIndex = 11;
             lbDashboard.Text = "Dashboard";
             // 
@@ -69,19 +68,17 @@
             // 
             panel5.Controls.Add(pictureBox9);
             panel5.Controls.Add(label6);
-            panel5.Location = new Point(30, 337);
-            panel5.Margin = new Padding(4);
+            panel5.Location = new Point(24, 286);
             panel5.Name = "panel5";
-            panel5.Size = new Size(1298, 343);
+            panel5.Size = new Size(1039, 295);
             panel5.TabIndex = 10;
             // 
             // pictureBox9
             // 
             pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
-            pictureBox9.Location = new Point(99, 87);
-            pictureBox9.Margin = new Padding(4);
+            pictureBox9.Location = new Point(85, 77);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(1105, 220);
+            pictureBox9.Size = new Size(885, 198);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 1;
             pictureBox9.TabStop = false;
@@ -89,10 +86,9 @@
             // label6
             // 
             label6.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(29, 29);
-            label6.Margin = new Padding(4, 0, 4, 0);
+            label6.Location = new Point(14, 39);
             label6.Name = "label6";
-            label6.Size = new Size(226, 44);
+            label6.Size = new Size(181, 35);
             label6.TabIndex = 0;
             label6.Text = "Sales Graph";
             label6.Click += label6_Click;
@@ -103,20 +99,18 @@
             panel3.Controls.Add(label4);
             panel3.Controls.Add(MEarnings);
             panel3.Controls.Add(label3);
-            panel3.Location = new Point(677, 91);
-            panel3.Margin = new Padding(4);
+            panel3.Location = new Point(542, 73);
             panel3.Name = "panel3";
-            panel3.Size = new Size(651, 224);
+            panel3.Size = new Size(521, 179);
             panel3.TabIndex = 9;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.InitialImage = (Image)resources.GetObject("pictureBox3.InitialImage");
-            pictureBox3.Location = new Point(382, 20);
-            pictureBox3.Margin = new Padding(4);
+            pictureBox3.Location = new Point(306, 16);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(166, 168);
+            pictureBox3.Size = new Size(133, 134);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 3;
             pictureBox3.TabStop = false;
@@ -124,31 +118,28 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(150, 162);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(120, 130);
             label4.Name = "label4";
-            label4.Size = new Size(117, 25);
+            label4.Size = new Size(95, 20);
             label4.TabIndex = 2;
             label4.Text = "Last 29 Days ";
             // 
             // MEarnings
             // 
             MEarnings.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            MEarnings.Location = new Point(32, 20);
-            MEarnings.Margin = new Padding(4, 0, 4, 0);
+            MEarnings.Location = new Point(26, 16);
             MEarnings.Name = "MEarnings";
-            MEarnings.Size = new Size(248, 44);
+            MEarnings.Size = new Size(198, 35);
             MEarnings.TabIndex = 0;
             MEarnings.Text = "Mothly Earnings";
             // 
             // label3
             // 
             label3.Font = new Font("Tahoma", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = SystemColors.Window;
-            label3.Location = new Point(32, 76);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.ForeColor = Color.Sienna;
+            label3.Location = new Point(26, 61);
             label3.Name = "label3";
-            label3.Size = new Size(325, 86);
+            label3.Size = new Size(260, 69);
             label3.TabIndex = 1;
             label3.Text = "RS 280,000";
             // 
@@ -159,20 +150,18 @@
             panel2.Controls.Add(label2);
             panel2.Controls.Add(TPrice);
             panel2.Controls.Add(TEarning);
-            panel2.Location = new Point(30, 91);
-            panel2.Margin = new Padding(4);
+            panel2.Location = new Point(24, 73);
             panel2.Name = "panel2";
-            panel2.Size = new Size(627, 224);
+            panel2.Size = new Size(502, 179);
             panel2.TabIndex = 8;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.InitialImage = (Image)resources.GetObject("pictureBox2.InitialImage");
-            pictureBox2.Location = new Point(429, 20);
-            pictureBox2.Margin = new Padding(4);
+            pictureBox2.Location = new Point(343, 16);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(166, 168);
+            pictureBox2.Size = new Size(133, 134);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -181,59 +170,56 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(88, 162);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(70, 130);
             label2.Name = "label2";
-            label2.Size = new Size(133, 25);
+            label2.Size = new Size(111, 20);
             label2.TabIndex = 2;
             label2.Text = "Date and TIme ";
             // 
             // TPrice
             // 
             TPrice.Font = new Font("Tahoma", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TPrice.ForeColor = SystemColors.Window;
-            TPrice.Location = new Point(18, 76);
-            TPrice.Margin = new Padding(4, 0, 4, 0);
+            TPrice.ForeColor = Color.Sienna;
+            TPrice.Location = new Point(14, 61);
             TPrice.Name = "TPrice";
-            TPrice.Size = new Size(292, 86);
+            TPrice.Size = new Size(234, 69);
             TPrice.TabIndex = 1;
             TPrice.Text = "RS 10,000";
             // 
             // TEarning
             // 
             TEarning.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TEarning.Location = new Point(18, 20);
-            TEarning.Margin = new Padding(4, 0, 4, 0);
+            TEarning.Location = new Point(14, 16);
             TEarning.Name = "TEarning";
-            TEarning.Size = new Size(226, 44);
+            TEarning.Size = new Size(181, 35);
             TEarning.TabIndex = 0;
             TEarning.Text = "Today Earnings";
             // 
             // label1
             // 
-            label1.BackColor = Color.Silver;
+            label1.BackColor = SystemColors.Control;
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Copperplate Gothic Bold", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(30, 0);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(24, 0);
             label1.Name = "label1";
-            label1.Size = new Size(435, 70);
+            label1.Size = new Size(348, 56);
             label1.TabIndex = 12;
             label1.Text = "Dashboard";
             // 
             // ZH_MainMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Silver;
+            BackColor = SystemColors.Control;
             Controls.Add(label1);
             Controls.Add(lbDashboard);
             Controls.Add(panel5);
             Controls.Add(panel3);
             Controls.Add(panel2);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "ZH_MainMenu";
-            Size = new Size(1357, 712);
+            Size = new Size(1376, 622);
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             panel3.ResumeLayout(false);
