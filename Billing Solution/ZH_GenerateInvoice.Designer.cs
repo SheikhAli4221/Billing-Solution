@@ -307,7 +307,7 @@
             // btnPrint
             // 
             btnPrint.Font = new Font("Microsoft YaHei", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPrint.Location = new Point(27, 531);
+            btnPrint.Location = new Point(27, 518);
             btnPrint.Name = "btnPrint";
             btnPrint.Size = new Size(149, 33);
             btnPrint.TabIndex = 5;

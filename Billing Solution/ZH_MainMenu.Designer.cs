@@ -86,7 +86,7 @@
             // label6
             // 
             label6.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(14, 39);
+            label6.Location = new Point(14, 23);
             label6.Name = "label6";
             label6.Size = new Size(181, 35);
             label6.TabIndex = 0;
