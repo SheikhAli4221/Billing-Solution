@@ -59,9 +59,10 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Arial Rounded MT Bold", 10F);
             label1.Location = new Point(312, 99);
             label1.Name = "label1";
-            label1.Size = new Size(52, 20);
+            label1.Size = new Size(62, 20);
             label1.TabIndex = 0;
             label1.Text = "Name:";
             label1.Click += label1_Click;
@@ -69,9 +70,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Arial Rounded MT Bold", 10F);
             label2.Location = new Point(312, 173);
             label2.Name = "label2";
-            label2.Size = new Size(45, 20);
+            label2.Size = new Size(58, 20);
             label2.TabIndex = 1;
             label2.Text = "CNIC:";
             label2.Click += label2_Click;
@@ -79,9 +81,10 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Arial Rounded MT Bold", 10F);
             label3.Location = new Point(686, 173);
             label3.Name = "label3";
-            label3.Size = new Size(49, 20);
+            label3.Size = new Size(60, 20);
             label3.TabIndex = 2;
             label3.Text = "Email:";
             label3.Click += label3_Click;
@@ -97,6 +100,7 @@
             // button1
             // 
             button1.BackColor = SystemColors.ControlDarkDark;
+            button1.Font = new Font("Segoe UI", 10F);
             button1.Location = new Point(367, 287);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
@@ -107,6 +111,7 @@
             // button2
             // 
             button2.BackColor = SystemColors.ControlDarkDark;
+            button2.Font = new Font("Segoe UI", 10F);
             button2.Location = new Point(569, 287);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
@@ -117,6 +122,7 @@
             // button3
             // 
             button3.BackColor = SystemColors.ControlDarkDark;
+            button3.Font = new Font("Segoe UI", 10F);
             button3.Location = new Point(760, 287);
             button3.Name = "button3";
             button3.Size = new Size(94, 29);
@@ -144,9 +150,10 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Arial Rounded MT Bold", 10F);
             label4.Location = new Point(324, 243);
             label4.Name = "label4";
-            label4.Size = new Size(42, 20);
+            label4.Size = new Size(51, 20);
             label4.TabIndex = 9;
             label4.Text = "Role:";
             label4.Click += label4_Click;
@@ -234,9 +241,10 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.Font = new Font("Arial Rounded MT Bold", 10F);
             label6.Location = new Point(686, 96);
             label6.Name = "label6";
-            label6.Size = new Size(60, 20);
+            label6.Size = new Size(75, 20);
             label6.TabIndex = 14;
             label6.Text = "User ID:";
             // 
@@ -251,11 +259,13 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(662, 243);
+            label7.Font = new Font("Arial Rounded MT Bold", 10F);
+            label7.Location = new Point(647, 243);
             label7.Name = "label7";
-            label7.Size = new Size(93, 20);
+            label7.Size = new Size(114, 20);
             label7.TabIndex = 16;
             label7.Text = "Contact Info:";
+            label7.Click += label7_Click;
             // 
             // textBox6
             // 

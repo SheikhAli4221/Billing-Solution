@@ -46,5 +46,10 @@ namespace Billing_Solution
         {
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
