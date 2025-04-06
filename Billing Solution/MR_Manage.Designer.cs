@@ -64,7 +64,7 @@
             dataGridViewInventory.RowHeadersVisible = false;
             dataGridViewInventory.RowHeadersWidth = 62;
             dataGridViewInventory.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewInventory.Size = new Size(1304, 529);
+            dataGridViewInventory.Size = new Size(1411, 719);
             dataGridViewInventory.TabIndex = 7;
             // 
             // Column1
@@ -116,7 +116,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(206, 147);
+            button1.Location = new Point(280, 141);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 8;
@@ -125,7 +125,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(0, 147);
+            textBox1.Location = new Point(50, 141);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(200, 31);
             textBox1.TabIndex = 7;
@@ -165,7 +165,7 @@
             btnNewProduct.ForeColor = Color.White;
             btnNewProduct.Image = (Image)resources.GetObject("btnNewProduct.Image");
             btnNewProduct.ImageAlign = ContentAlignment.MiddleLeft;
-            btnNewProduct.Location = new Point(549, 132);
+            btnNewProduct.Location = new Point(601, 129);
             btnNewProduct.Name = "btnNewProduct";
             btnNewProduct.Size = new Size(207, 46);
             btnNewProduct.TabIndex = 5;
@@ -181,7 +181,7 @@
             btnReorderStock.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnReorderStock.ForeColor = Color.White;
             btnReorderStock.ImageAlign = ContentAlignment.MiddleRight;
-            btnReorderStock.Location = new Point(975, 132);
+            btnReorderStock.Location = new Point(1083, 129);
             btnReorderStock.Name = "btnReorderStock";
             btnReorderStock.Size = new Size(194, 46);
             btnReorderStock.TabIndex = 4;
@@ -195,7 +195,7 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 181);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1304, 529);
+            panel2.Size = new Size(1411, 719);
             panel2.TabIndex = 3;
             // 
             // panel1
@@ -211,7 +211,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1304, 181);
+            panel1.Size = new Size(1411, 181);
             panel1.TabIndex = 2;
             // 
             // btnRemoveWhole
@@ -222,7 +222,7 @@
             btnRemoveWhole.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnRemoveWhole.ForeColor = Color.White;
             btnRemoveWhole.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRemoveWhole.Location = new Point(762, 132);
+            btnRemoveWhole.Location = new Point(848, 129);
             btnRemoveWhole.Name = "btnRemoveWhole";
             btnRemoveWhole.Size = new Size(207, 46);
             btnRemoveWhole.TabIndex = 9;
@@ -237,7 +237,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "MR_Manage";
-            Size = new Size(1304, 710);
+            Size = new Size(1411, 900);
             ((System.ComponentModel.ISupportInitialize)dataGridViewInventory).EndInit();
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);

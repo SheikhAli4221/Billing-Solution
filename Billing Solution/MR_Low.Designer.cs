@@ -62,7 +62,7 @@
             dataGridViewInventoryLow.RowHeadersVisible = false;
             dataGridViewInventoryLow.RowHeadersWidth = 62;
             dataGridViewInventoryLow.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridViewInventoryLow.Size = new Size(1298, 527);
+            dataGridViewInventoryLow.Size = new Size(1411, 719);
             dataGridViewInventoryLow.TabIndex = 7;
             // 
             // Column1
@@ -171,7 +171,7 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 181);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1298, 527);
+            panel2.Size = new Size(1411, 719);
             panel2.TabIndex = 3;
             // 
             // panel1
@@ -184,7 +184,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1298, 181);
+            panel1.Size = new Size(1411, 181);
             panel1.TabIndex = 2;
             // 
             // MR_Low
@@ -194,7 +194,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "MR_Low";
-            Size = new Size(1298, 708);
+            Size = new Size(1411, 900);
             ((System.ComponentModel.ISupportInitialize)dataGridViewInventoryLow).EndInit();
             panel2.ResumeLayout(false);
             panel1.ResumeLayout(false);

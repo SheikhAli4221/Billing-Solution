@@ -16,5 +16,10 @@ namespace Billing_Solution
         {
             InitializeComponent();
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -67,12 +67,12 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1128, 155);
+            panel1.Size = new Size(1411, 155);
             panel1.TabIndex = 2;
             // 
             // textBoxSearch
             // 
-            textBoxSearch.Location = new Point(733, 118);
+            textBoxSearch.Location = new Point(1000, 118);
             textBoxSearch.Name = "textBoxSearch";
             textBoxSearch.Size = new Size(200, 31);
             textBoxSearch.TabIndex = 3;
@@ -84,12 +84,13 @@
             btnClear.FlatStyle = FlatStyle.Flat;
             btnClear.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnClear.ForeColor = Color.White;
-            btnClear.Location = new Point(953, 115);
+            btnClear.Location = new Point(1225, 115);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(112, 34);
             btnClear.TabIndex = 4;
             btnClear.Text = "Clear";
             btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // panel2
             // 
@@ -97,18 +98,19 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1128, 709);
+            panel2.Size = new Size(1411, 900);
             panel2.TabIndex = 3;
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.BackgroundColor = SystemColors.Control;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Column2, Column3, Column4, Column5, Column6, Column7 });
-            dataGridView1.Location = new Point(4, 160);
+            dataGridView1.Location = new Point(25, 160);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1120, 542);
+            dataGridView1.Size = new Size(1367, 737);
             dataGridView1.TabIndex = 0;
             // 
             // ID
@@ -116,49 +118,42 @@
             ID.HeaderText = "ID";
             ID.MinimumWidth = 8;
             ID.Name = "ID";
-            ID.Width = 150;
             // 
             // Column2
             // 
             Column2.HeaderText = "Image";
             Column2.MinimumWidth = 8;
             Column2.Name = "Column2";
-            Column2.Width = 150;
             // 
             // Column3
             // 
             Column3.HeaderText = "Name";
             Column3.MinimumWidth = 8;
             Column3.Name = "Column3";
-            Column3.Width = 150;
             // 
             // Column4
             // 
             Column4.HeaderText = "Category";
             Column4.MinimumWidth = 8;
             Column4.Name = "Column4";
-            Column4.Width = 150;
             // 
             // Column5
             // 
             Column5.HeaderText = "Sale Price";
             Column5.MinimumWidth = 8;
             Column5.Name = "Column5";
-            Column5.Width = 150;
             // 
             // Column6
             // 
             Column6.HeaderText = "Cost Price";
             Column6.MinimumWidth = 8;
             Column6.Name = "Column6";
-            Column6.Width = 150;
             // 
             // Column7
             // 
             Column7.HeaderText = "Stock";
             Column7.MinimumWidth = 8;
             Column7.Name = "Column7";
-            Column7.Width = 150;
             // 
             // MR_Entry
             // 
@@ -167,7 +162,7 @@
             Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "MR_Entry";
-            Size = new Size(1128, 709);
+            Size = new Size(1411, 900);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);

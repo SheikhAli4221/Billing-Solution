@@ -57,7 +57,7 @@
             panel1.ForeColor = SystemColors.ControlText;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1314, 119);
+            panel1.Size = new Size(1411, 119);
             panel1.TabIndex = 3;
             // 
             // btnClearSearchDamage
@@ -66,12 +66,13 @@
             btnClearSearchDamage.Cursor = Cursors.Hand;
             btnClearSearchDamage.FlatStyle = FlatStyle.Flat;
             btnClearSearchDamage.ForeColor = Color.White;
-            btnClearSearchDamage.Location = new Point(1151, 85);
+            btnClearSearchDamage.Location = new Point(1188, 82);
             btnClearSearchDamage.Name = "btnClearSearchDamage";
             btnClearSearchDamage.Size = new Size(112, 34);
             btnClearSearchDamage.TabIndex = 6;
             btnClearSearchDamage.Text = "Clear";
             btnClearSearchDamage.UseVisualStyleBackColor = false;
+            btnClearSearchDamage.Click += btnClearSearchDamage_Click;
             // 
             // label1
             // 
@@ -87,7 +88,7 @@
             // 
             // textBoxSearchDamage
             // 
-            textBoxSearchDamage.Location = new Point(812, 85);
+            textBoxSearchDamage.Location = new Point(885, 84);
             textBoxSearchDamage.Name = "textBoxSearchDamage";
             textBoxSearchDamage.Size = new Size(281, 31);
             textBoxSearchDamage.TabIndex = 5;
@@ -99,18 +100,19 @@
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1314, 708);
+            panel2.Size = new Size(1411, 900);
             panel2.TabIndex = 5;
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.BackgroundColor = SystemColors.Control;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Image, Name, SalePrice, CostPrice, Category, Stock, Delete });
             dataGridView1.Location = new Point(23, 121);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1277, 584);
+            dataGridView1.Size = new Size(1364, 759);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -119,56 +121,48 @@
             ID.HeaderText = "ID";
             ID.MinimumWidth = 8;
             ID.Name = "ID";
-            ID.Width = 150;
             // 
             // Image
             // 
             Image.HeaderText = "Image";
             Image.MinimumWidth = 8;
             Image.Name = "Image";
-            Image.Width = 150;
             // 
             // Name
             // 
             Name.HeaderText = "Name";
             Name.MinimumWidth = 8;
             Name.Name = "Name";
-            Name.Width = 150;
             // 
             // SalePrice
             // 
             SalePrice.HeaderText = "Sale Price";
             SalePrice.MinimumWidth = 8;
             SalePrice.Name = "SalePrice";
-            SalePrice.Width = 150;
             // 
             // CostPrice
             // 
             CostPrice.HeaderText = "Cost Price";
             CostPrice.MinimumWidth = 8;
             CostPrice.Name = "CostPrice";
-            CostPrice.Width = 150;
             // 
             // Category
             // 
             Category.HeaderText = "Category";
             Category.MinimumWidth = 8;
             Category.Name = "Category";
-            Category.Width = 150;
             // 
             // Stock
             // 
             Stock.HeaderText = "Stock";
             Stock.MinimumWidth = 8;
             Stock.Name = "Stock";
-            Stock.Width = 150;
             // 
             // Delete
             // 
             Delete.HeaderText = "Delete";
             Delete.MinimumWidth = 8;
             Delete.Name = "Delete";
-            Delete.Width = 150;
             // 
             // MR_Damage
             // 
@@ -176,8 +170,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
             Controls.Add(panel2);
-            
-            Size = new Size(1314, 708);
+           
+            Size = new Size(1411, 900);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
