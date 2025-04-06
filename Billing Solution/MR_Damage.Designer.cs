@@ -78,11 +78,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Copperplate Gothic Bold", 28F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(294, 54);
+            label1.Size = new Size(477, 63);
             label1.TabIndex = 0;
             label1.Text = "Damage Stock";
             // 
@@ -170,7 +170,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
             Controls.Add(panel2);
-           
+            
             Size = new Size(1411, 900);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

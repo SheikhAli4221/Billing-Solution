@@ -135,11 +135,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI Black", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Copperplate Gothic Bold", 28F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(299, 54);
+            label1.Size = new Size(480, 63);
             label1.TabIndex = 0;
             label1.Text = "Manage Stock";
             // 
@@ -151,7 +151,7 @@
             comboBoxFilter.ForeColor = Color.FromArgb(37, 37, 38);
             comboBoxFilter.FormattingEnabled = true;
             comboBoxFilter.Items.AddRange(new object[] { "Low stock", "Out of stock ", "All stock" });
-            comboBoxFilter.Location = new Point(358, 33);
+            comboBoxFilter.Location = new Point(519, 126);
             comboBoxFilter.Name = "comboBoxFilter";
             comboBoxFilter.Size = new Size(182, 36);
             comboBoxFilter.TabIndex = 6;
@@ -165,7 +165,7 @@
             btnNewProduct.ForeColor = Color.White;
             btnNewProduct.Image = (Image)resources.GetObject("btnNewProduct.Image");
             btnNewProduct.ImageAlign = ContentAlignment.MiddleLeft;
-            btnNewProduct.Location = new Point(601, 129);
+            btnNewProduct.Location = new Point(717, 126);
             btnNewProduct.Name = "btnNewProduct";
             btnNewProduct.Size = new Size(207, 46);
             btnNewProduct.TabIndex = 5;
@@ -181,7 +181,7 @@
             btnReorderStock.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnReorderStock.ForeColor = Color.White;
             btnReorderStock.ImageAlign = ContentAlignment.MiddleRight;
-            btnReorderStock.Location = new Point(1083, 129);
+            btnReorderStock.Location = new Point(1186, 129);
             btnReorderStock.Name = "btnReorderStock";
             btnReorderStock.Size = new Size(194, 46);
             btnReorderStock.TabIndex = 4;
@@ -222,7 +222,7 @@
             btnRemoveWhole.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnRemoveWhole.ForeColor = Color.White;
             btnRemoveWhole.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRemoveWhole.Location = new Point(848, 129);
+            btnRemoveWhole.Location = new Point(973, 129);
             btnRemoveWhole.Name = "btnRemoveWhole";
             btnRemoveWhole.Size = new Size(207, 46);
             btnRemoveWhole.TabIndex = 9;
