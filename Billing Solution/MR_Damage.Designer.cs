@@ -53,11 +53,10 @@
             panel1.Controls.Add(btnClearSearchDamage);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(textBoxSearchDamage);
-            panel1.Dock = DockStyle.Top;
             panel1.ForeColor = SystemColors.ControlText;
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(-11, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1411, 119);
+            panel1.Size = new Size(1422, 119);
             panel1.TabIndex = 3;
             // 
             // btnClearSearchDamage
@@ -80,7 +79,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Copperplate Gothic Bold", 28F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Black;
-            label1.Location = new Point(0, 0);
+            label1.Location = new Point(14, 0);
             label1.Name = "label1";
             label1.Size = new Size(477, 63);
             label1.TabIndex = 0;
@@ -109,10 +108,10 @@
             dataGridView1.BackgroundColor = SystemColors.Control;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ID, Image, Name, SalePrice, CostPrice, Category, Stock, Delete });
-            dataGridView1.Location = new Point(23, 121);
+            dataGridView1.Location = new Point(0, 121);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(1364, 759);
+            dataGridView1.Size = new Size(1411, 759);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -170,7 +169,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
             Controls.Add(panel2);
-            
+           
             Size = new Size(1411, 900);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

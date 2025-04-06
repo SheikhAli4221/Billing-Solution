@@ -30,7 +30,6 @@
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
-            Panel = new Panel();
             splitContainer1 = new SplitContainer();
             pictureBox6 = new PictureBox();
             buttonExit = new Button();
@@ -44,6 +43,7 @@
             button10 = new Button();
             button11 = new Button();
             button12 = new Button();
+            pnlContent = new Panel();
             panelSidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -193,15 +193,6 @@
             button2.TextAlign = ContentAlignment.MiddleRight;
             button2.UseVisualStyleBackColor = true;
             // 
-            // Panel
-            // 
-            Panel.AutoSize = true;
-            Panel.Dock = DockStyle.Fill;
-            Panel.Location = new Point(0, 0);
-            Panel.Name = "Panel";
-            Panel.Size = new Size(1411, 900);
-            Panel.TabIndex = 0;
-            // 
             // splitContainer1
             // 
             splitContainer1.Dock = DockStyle.Fill;
@@ -227,9 +218,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            splitContainer1.Panel2.Controls.Add(Panel);
+            splitContainer1.Panel2.Controls.Add(pnlContent);
             splitContainer1.Size = new Size(1702, 900);
-            splitContainer1.SplitterDistance = 285;
+            splitContainer1.SplitterDistance = 298;
             splitContainer1.SplitterWidth = 6;
             splitContainer1.TabIndex = 1;
             // 
@@ -355,7 +346,7 @@
             button10.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button10.Location = new Point(-2, 315);
             button10.Name = "button10";
-            button10.Size = new Size(284, 49);
+            button10.Size = new Size(300, 49);
             button10.TabIndex = 24;
             button10.Text = "Low Stock";
             button10.UseVisualStyleBackColor = false;
@@ -389,17 +380,28 @@
             button12.UseVisualStyleBackColor = false;
             button12.Click += button12_Click;
             // 
+            // pnlContent
+            // 
+            pnlContent.BackColor = Color.WhiteSmoke;
+            pnlContent.Dock = DockStyle.Fill;
+            pnlContent.Location = new Point(0, 0);
+            pnlContent.Margin = new Padding(4);
+            pnlContent.Name = "pnlContent";
+            pnlContent.Size = new Size(1398, 900);
+            pnlContent.TabIndex = 3;
+            // 
             // InventoryManager
             // 
             ClientSize = new Size(1702, 900);
             Controls.Add(splitContainer1);
             Name = "InventoryManager";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Inventory Management";
             Load += InventoryManager_Load;
             panelSidebar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
-            splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
@@ -441,5 +443,6 @@
         private Button button10;
         private Button button11;
         private Button button12;
+        private Panel pnlContent;
     }
 }

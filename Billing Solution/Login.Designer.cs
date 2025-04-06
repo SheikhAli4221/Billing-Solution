@@ -42,10 +42,10 @@
             // 
             button1.BackColor = Color.SlateBlue;
             button1.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(150, 318);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(214, 530);
+            button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
-            button1.Size = new Size(175, 38);
+            button1.Size = new Size(250, 63);
             button1.TabIndex = 0;
             button1.Text = "Sign In";
             button1.UseVisualStyleBackColor = false;
@@ -56,26 +56,29 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Copperplate Gothic Bold", 34.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(275, 23);
+            label1.Location = new Point(393, 38);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(431, 51);
+            label1.Size = new Size(644, 77);
             label1.TabIndex = 5;
             label1.Text = "Welcome to IBS";
             label1.Click += label1_Click;
             // 
             // Username
             // 
-            Username.Location = new Point(209, 191);
+            Username.Location = new Point(299, 318);
+            Username.Margin = new Padding(4, 5, 4, 5);
             Username.Name = "Username";
-            Username.Size = new Size(265, 23);
+            Username.Size = new Size(377, 31);
             Username.TabIndex = 6;
             Username.MaskInputRejected += maskedTextBox1_MaskInputRejected;
             // 
             // Password
             // 
-            Password.Location = new Point(209, 243);
+            Password.Location = new Point(299, 405);
+            Password.Margin = new Padding(4, 5, 4, 5);
             Password.Name = "Password";
-            Password.Size = new Size(265, 23);
+            Password.Size = new Size(377, 31);
             Password.TabIndex = 7;
             // 
             // label2
@@ -83,9 +86,10 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Copperplate Gothic Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(56, 192);
+            label2.Location = new Point(80, 320);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(130, 18);
+            label2.Size = new Size(197, 26);
             label2.TabIndex = 8;
             label2.Text = "UserId/Email";
             // 
@@ -94,9 +98,10 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Copperplate Gothic Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(56, 244);
+            label3.Location = new Point(80, 407);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(99, 18);
+            label3.Size = new Size(150, 26);
             label3.TabIndex = 9;
             label3.Text = "Password";
             // 
@@ -105,19 +110,20 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Copperplate Gothic Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(56, 126);
+            label4.Location = new Point(80, 210);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(347, 26);
+            label4.Size = new Size(520, 40);
             label4.TabIndex = 10;
             label4.Text = "Enter your login details";
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1192, 540);
+            ClientSize = new Size(1703, 900);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -125,8 +131,9 @@
             Controls.Add(Username);
             Controls.Add(label1);
             Controls.Add(button1);
-            Margin = new Padding(3, 2, 3, 2);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
             ResumeLayout(false);

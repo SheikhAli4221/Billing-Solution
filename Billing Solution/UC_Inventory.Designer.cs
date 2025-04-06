@@ -59,45 +59,46 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.InactiveCaption;
+            panel1.BackColor = Color.DimGray;
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Top;
             panel1.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             panel1.Location = new Point(0, 0);
             panel1.Margin = new Padding(4, 3, 4, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1940, 121);
+            panel1.Size = new Size(1411, 153);
             panel1.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Rounded MT Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(761, 33);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Copperplate Gothic Bold", 28F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(0, 0);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(299, 34);
+            label1.Size = new Size(457, 63);
             label1.TabIndex = 0;
-            label1.Text = "        • Inventory        ";
+            label1.Text = "Inventory        ";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Arial Rounded MT Bold", 12F);
-            label2.Location = new Point(134, 161);
+            label2.Location = new Point(108, 242);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(116, 23);
+            label2.Size = new Size(138, 28);
             label2.TabIndex = 1;
             label2.Text = "Item Code:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(136, 234);
+            label3.Location = new Point(110, 315);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(75, 23);
+            label3.Size = new Size(90, 28);
             label3.TabIndex = 2;
             label3.Text = "Model:";
             // 
@@ -105,20 +106,20 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Arial Rounded MT Bold", 12F);
-            label4.Location = new Point(136, 298);
+            label4.Location = new Point(110, 379);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(57, 23);
+            label4.Size = new Size(69, 28);
             label4.TabIndex = 3;
             label4.Text = "Part:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(134, 375);
+            label5.Location = new Point(108, 456);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(65, 23);
+            label5.Size = new Size(77, 28);
             label5.TabIndex = 4;
             label5.Text = "Type:";
             label5.Click += label5_Click;
@@ -126,37 +127,39 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(134, 452);
+            label6.Location = new Point(108, 533);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(67, 23);
+            label6.Size = new Size(82, 28);
             label6.TabIndex = 5;
             label6.Text = "Price:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(136, 519);
+            label7.Location = new Point(110, 600);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(96, 23);
+            label7.Size = new Size(116, 28);
             label7.TabIndex = 6;
             label7.Text = "In-Stock:";
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ControlDarkDark;
-            button1.Location = new Point(183, 610);
+            button1.BackColor = Color.Black;
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(161, 693);
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
             button1.Size = new Size(183, 48);
             button1.TabIndex = 7;
             button1.Text = "Add Item";
+            button1.TextAlign = ContentAlignment.MiddleRight;
             button1.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(286, 150);
+            textBox1.Location = new Point(260, 231);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 34);
@@ -164,7 +167,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(286, 223);
+            textBox2.Location = new Point(260, 304);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 34);
@@ -172,7 +175,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(286, 290);
+            textBox3.Location = new Point(260, 371);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(125, 31);
@@ -180,7 +183,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(286, 508);
+            textBox4.Location = new Point(260, 589);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(125, 34);
@@ -188,7 +191,7 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(286, 441);
+            textBox5.Location = new Point(260, 522);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(125, 34);
@@ -196,7 +199,7 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(286, 364);
+            textBox6.Location = new Point(260, 445);
             textBox6.Multiline = true;
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(125, 34);
@@ -206,7 +209,7 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(192, 622);
+            pictureBox1.Location = new Point(170, 705);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(31, 27);
             pictureBox1.TabIndex = 14;
@@ -216,7 +219,7 @@
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column6 });
-            dataGridView1.Location = new Point(511, 210);
+            dataGridView1.Location = new Point(528, 228);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(803, 349);
@@ -266,7 +269,7 @@
             // 
             // UC_Inventory
             // 
-            AutoScaleDimensions = new SizeF(12F, 23F);
+            AutoScaleDimensions = new SizeF(15F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
@@ -287,7 +290,7 @@
             Font = new Font("Arial Rounded MT Bold", 12F);
             Margin = new Padding(4, 3, 4, 3);
             Name = "UC_Inventory";
-            Size = new Size(1940, 865);
+            Size = new Size(1411, 900);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

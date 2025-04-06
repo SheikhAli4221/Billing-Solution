@@ -26,5 +26,10 @@ namespace Billing_Solution
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

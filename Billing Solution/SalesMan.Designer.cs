@@ -117,7 +117,7 @@
             btnStockCheck.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnStockCheck.BackColor = Color.Transparent;
             btnStockCheck.FlatAppearance.BorderSize = 0;
-            btnStockCheck.FlatStyle = FlatStyle.Flat;
+            btnStockCheck.FlatStyle = FlatStyle.Popup;
             btnStockCheck.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStockCheck.ForeColor = Color.Black;
             btnStockCheck.Location = new Point(12, 462);
@@ -146,7 +146,7 @@
             btnLogOut.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnLogOut.BackColor = Color.Transparent;
             btnLogOut.FlatAppearance.BorderSize = 0;
-            btnLogOut.FlatStyle = FlatStyle.Flat;
+            btnLogOut.FlatStyle = FlatStyle.Popup;
             btnLogOut.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogOut.ForeColor = Color.Black;
             btnLogOut.Location = new Point(0, 815);
@@ -197,7 +197,7 @@
             btnMainMenu.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnMainMenu.BackColor = Color.DimGray;
             btnMainMenu.FlatAppearance.BorderSize = 0;
-            btnMainMenu.FlatStyle = FlatStyle.Flat;
+            btnMainMenu.FlatStyle = FlatStyle.Popup;
             btnMainMenu.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMainMenu.ForeColor = Color.Black;
             btnMainMenu.Location = new Point(-4, 212);
@@ -215,7 +215,7 @@
             btnGenerateInvoice.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnGenerateInvoice.BackColor = Color.DimGray;
             btnGenerateInvoice.FlatAppearance.BorderSize = 0;
-            btnGenerateInvoice.FlatStyle = FlatStyle.Flat;
+            btnGenerateInvoice.FlatStyle = FlatStyle.Popup;
             btnGenerateInvoice.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGenerateInvoice.ForeColor = Color.Black;
             btnGenerateInvoice.Location = new Point(-4, 290);
@@ -233,7 +233,7 @@
             btnOrderHistory.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnOrderHistory.BackColor = Color.DimGray;
             btnOrderHistory.FlatAppearance.BorderSize = 0;
-            btnOrderHistory.FlatStyle = FlatStyle.Flat;
+            btnOrderHistory.FlatStyle = FlatStyle.Popup;
             btnOrderHistory.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnOrderHistory.ForeColor = Color.Black;
             btnOrderHistory.Location = new Point(0, 378);
@@ -265,7 +265,6 @@
             ClientSize = new Size(1702, 900);
             Controls.Add(pnlContent);
             Controls.Add(pnlSidebar);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(4, 5, 4, 5);
             Name = "SalesMan";
             StartPosition = FormStartPosition.CenterScreen;

@@ -24,9 +24,9 @@ namespace Billing_Solution
 
         private void LoadUserControl(UserControl uc)
         {
-            Panel.Controls.Clear();       // Clear old content
+            pnlContent.Controls.Clear();       // Clear old content
             uc.Dock = DockStyle.Fill;                // Make it fill the panel
-            Panel.Controls.Add(uc);       // Add new control
+            pnlContent.Controls.Add(uc);       // Add new control
         }
 
         private void buttonExit_Click(object sender, EventArgs e)

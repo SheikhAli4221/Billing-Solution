@@ -21,5 +21,10 @@ namespace Billing_Solution
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
