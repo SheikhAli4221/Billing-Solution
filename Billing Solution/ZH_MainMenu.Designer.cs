@@ -217,9 +217,9 @@
             Controls.Add(panel5);
             Controls.Add(panel3);
             Controls.Add(panel2);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "ZH_MainMenu";
-            Size = new Size(1376, 622);
+            Size = new Size(1429, 626);
             panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             panel3.ResumeLayout(false);

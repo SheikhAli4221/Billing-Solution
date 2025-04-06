@@ -35,7 +35,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Name = "ZH_GenerateInvoice";
-            Size = new Size(1411, 594);
+            Size = new Size(1327, 580);
             ResumeLayout(false);
         }
 
