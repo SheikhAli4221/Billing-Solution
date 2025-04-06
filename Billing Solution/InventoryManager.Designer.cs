@@ -195,10 +195,11 @@
             // 
             // Panel
             // 
+            Panel.AutoSize = true;
             Panel.Dock = DockStyle.Fill;
             Panel.Location = new Point(0, 0);
             Panel.Name = "Panel";
-            Panel.Size = new Size(988, 685);
+            Panel.Size = new Size(992, 685);
             Panel.TabIndex = 0;
             // 
             // splitContainer1
@@ -228,7 +229,7 @@
             // 
             splitContainer1.Panel2.Controls.Add(Panel);
             splitContainer1.Size = new Size(1280, 685);
-            splitContainer1.SplitterDistance = 286;
+            splitContainer1.SplitterDistance = 282;
             splitContainer1.SplitterWidth = 6;
             splitContainer1.TabIndex = 1;
             // 
@@ -337,6 +338,7 @@
             button9.BackgroundImageLayout = ImageLayout.None;
             button9.FlatStyle = FlatStyle.Popup;
             button9.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button9.ForeColor = SystemColors.ControlText;
             button9.Location = new Point(0, 149);
             button9.Name = "button9";
             button9.Size = new Size(322, 49);
@@ -397,6 +399,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
+            splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
