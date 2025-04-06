@@ -21,5 +21,20 @@ namespace Billing_Solution
         {
 
         }
+
+        private void dataGridViewInvoice_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
