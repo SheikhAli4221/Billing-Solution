@@ -75,19 +75,17 @@
             pnlSidebar.Controls.Add(pictureBox1);
             pnlSidebar.Dock = DockStyle.Left;
             pnlSidebar.Location = new Point(0, 0);
-            pnlSidebar.Margin = new Padding(4);
             pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Size = new Size(225, 900);
+            pnlSidebar.Size = new Size(180, 720);
             pnlSidebar.TabIndex = 0;
             pnlSidebar.Paint += pnlSidebar_Paint;
             // 
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(4, 480);
-            pictureBox7.Margin = new Padding(4);
+            pictureBox7.Location = new Point(0, 317);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(52, 61);
+            pictureBox7.Size = new Size(42, 49);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 15;
             pictureBox7.TabStop = false;
@@ -100,23 +98,22 @@
             btnStockCheck.FlatStyle = FlatStyle.Flat;
             btnStockCheck.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnStockCheck.ForeColor = SystemColors.ActiveBorder;
-            btnStockCheck.Location = new Point(30, 480);
+            btnStockCheck.Location = new Point(3, 318);
             btnStockCheck.Margin = new Padding(0);
             btnStockCheck.Name = "btnStockCheck";
-            btnStockCheck.Padding = new Padding(6, 12, 6, 12);
-            btnStockCheck.Size = new Size(225, 60);
+            btnStockCheck.Padding = new Padding(5, 10, 5, 10);
+            btnStockCheck.Size = new Size(174, 48);
             btnStockCheck.TabIndex = 14;
-            btnStockCheck.Text = "Check Stock";
+            btnStockCheck.Text = "    Check Stock";
             btnStockCheck.UseVisualStyleBackColor = false;
             btnStockCheck.Click += btnStockCheck_Click;
             // 
             // pictureBox10
             // 
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(132, 835);
-            pictureBox10.Margin = new Padding(4);
+            pictureBox10.Location = new Point(106, 668);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(52, 50);
+            pictureBox10.Size = new Size(42, 40);
             pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox10.TabIndex = 20;
             pictureBox10.TabStop = false;
@@ -129,11 +126,11 @@
             btnLogOut.FlatStyle = FlatStyle.Flat;
             btnLogOut.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogOut.ForeColor = SystemColors.ActiveBorder;
-            btnLogOut.Location = new Point(0, 824);
+            btnLogOut.Location = new Point(0, 659);
             btnLogOut.Margin = new Padding(0);
             btnLogOut.Name = "btnLogOut";
-            btnLogOut.Padding = new Padding(6, 12, 6, 12);
-            btnLogOut.Size = new Size(225, 76);
+            btnLogOut.Padding = new Padding(5, 10, 5, 10);
+            btnLogOut.Size = new Size(180, 61);
             btnLogOut.TabIndex = 19;
             btnLogOut.Text = "    Log Out";
             btnLogOut.TextAlign = ContentAlignment.MiddleLeft;
@@ -143,10 +140,9 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(4, 332);
-            pictureBox6.Margin = new Padding(4);
+            pictureBox6.Location = new Point(3, 266);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(52, 61);
+            pictureBox6.Size = new Size(42, 49);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 16;
             pictureBox6.TabStop = false;
@@ -154,10 +150,9 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(4, 274);
-            pictureBox5.Margin = new Padding(4);
+            pictureBox5.Location = new Point(3, 219);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(52, 61);
+            pictureBox5.Size = new Size(42, 49);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 17;
             pictureBox5.TabStop = false;
@@ -165,10 +160,9 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(4, 215);
-            pictureBox4.Margin = new Padding(4);
+            pictureBox4.Location = new Point(3, 172);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(52, 51);
+            pictureBox4.Size = new Size(42, 41);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 18;
             pictureBox4.TabStop = false;
@@ -179,9 +173,8 @@
             panel1.Controls.Add(pictureBox8);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(225, 164);
+            panel1.Size = new Size(180, 131);
             panel1.TabIndex = 14;
             // 
             // label5
@@ -191,10 +184,9 @@
             label5.Font = new Font("Calisto MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ControlLight;
             label5.ImageAlign = ContentAlignment.MiddleLeft;
-            label5.Location = new Point(42, 122);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(34, 98);
             label5.Name = "label5";
-            label5.Size = new Size(115, 28);
+            label5.Size = new Size(98, 22);
             label5.TabIndex = 1;
             label5.Text = "Salesman";
             label5.TextAlign = ContentAlignment.MiddleCenter;
@@ -202,10 +194,9 @@
             // pictureBox8
             // 
             pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
-            pictureBox8.Location = new Point(64, 26);
-            pictureBox8.Margin = new Padding(4);
+            pictureBox8.Location = new Point(51, 21);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(79, 79);
+            pictureBox8.Size = new Size(63, 63);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 0;
             pictureBox8.TabStop = false;
@@ -218,11 +209,11 @@
             btnMainMenu.FlatStyle = FlatStyle.Flat;
             btnMainMenu.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMainMenu.ForeColor = SystemColors.ActiveBorder;
-            btnMainMenu.Location = new Point(-4, 212);
+            btnMainMenu.Location = new Point(-3, 170);
             btnMainMenu.Margin = new Padding(0);
             btnMainMenu.Name = "btnMainMenu";
-            btnMainMenu.Padding = new Padding(6, 12, 6, 12);
-            btnMainMenu.Size = new Size(225, 62);
+            btnMainMenu.Padding = new Padding(5, 10, 5, 10);
+            btnMainMenu.Size = new Size(180, 50);
             btnMainMenu.TabIndex = 10;
             btnMainMenu.Text = "    Main Menu";
             btnMainMenu.UseVisualStyleBackColor = false;
@@ -236,13 +227,13 @@
             btnGenerateInvoice.FlatStyle = FlatStyle.Flat;
             btnGenerateInvoice.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnGenerateInvoice.ForeColor = SystemColors.ActiveBorder;
-            btnGenerateInvoice.Location = new Point(0, 274);
+            btnGenerateInvoice.Location = new Point(0, 219);
             btnGenerateInvoice.Margin = new Padding(0);
             btnGenerateInvoice.Name = "btnGenerateInvoice";
-            btnGenerateInvoice.Padding = new Padding(6, 12, 6, 12);
-            btnGenerateInvoice.Size = new Size(225, 61);
+            btnGenerateInvoice.Padding = new Padding(5, 10, 5, 10);
+            btnGenerateInvoice.Size = new Size(180, 49);
             btnGenerateInvoice.TabIndex = 11;
-            btnGenerateInvoice.Text = "     Invoice";
+            btnGenerateInvoice.Text = "  Invoice";
             btnGenerateInvoice.UseVisualStyleBackColor = false;
             btnGenerateInvoice.Click += btnGenerateInvoice_Click;
             // 
@@ -254,11 +245,11 @@
             btnOrderHistory.FlatStyle = FlatStyle.Flat;
             btnOrderHistory.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnOrderHistory.ForeColor = SystemColors.ActiveBorder;
-            btnOrderHistory.Location = new Point(0, 335);
+            btnOrderHistory.Location = new Point(0, 268);
             btnOrderHistory.Margin = new Padding(0);
             btnOrderHistory.Name = "btnOrderHistory";
-            btnOrderHistory.Padding = new Padding(6, 12, 6, 12);
-            btnOrderHistory.Size = new Size(225, 61);
+            btnOrderHistory.Padding = new Padding(5, 10, 5, 10);
+            btnOrderHistory.Size = new Size(180, 49);
             btnOrderHistory.TabIndex = 12;
             btnOrderHistory.Text = "History";
             btnOrderHistory.UseVisualStyleBackColor = false;
@@ -271,10 +262,9 @@
             label1.Font = new Font("Calisto MT", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLight;
             label1.ImageAlign = ContentAlignment.MiddleLeft;
-            label1.Location = new Point(40, 111);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(32, 89);
             label1.Name = "label1";
-            label1.Size = new Size(115, 28);
+            label1.Size = new Size(98, 22);
             label1.TabIndex = 9;
             label1.Text = "Salesman";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -282,10 +272,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(62, 15);
-            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Location = new Point(50, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(79, 79);
+            pictureBox1.Size = new Size(63, 63);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
@@ -294,23 +283,22 @@
             // 
             pnlContent.BackColor = Color.WhiteSmoke;
             pnlContent.Dock = DockStyle.Fill;
-            pnlContent.Location = new Point(225, 0);
-            pnlContent.Margin = new Padding(4);
+            pnlContent.Location = new Point(180, 0);
             pnlContent.Name = "pnlContent";
-            pnlContent.Size = new Size(1477, 900);
+            pnlContent.Size = new Size(1182, 720);
             pnlContent.TabIndex = 2;
             pnlContent.Paint += pnlContent_Paint;
             // 
             // SalesMan
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HighlightText;
-            ClientSize = new Size(1702, 900);
+            ClientSize = new Size(1362, 720);
             Controls.Add(pnlContent);
             Controls.Add(pnlSidebar);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(4, 5, 4, 5);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "SalesMan";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Salesman Dashboard";
