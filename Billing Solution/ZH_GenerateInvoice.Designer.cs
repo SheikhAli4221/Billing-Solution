@@ -56,6 +56,7 @@
             btnPrint = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewInvoice).BeginInit();
             groupBoxCustomer.SuspendLayout();
+            groupBoxSummary.SuspendLayout();
             tableLayoutPanelSummary.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericDiscount).BeginInit();
             SuspendLayout();
@@ -127,9 +128,9 @@
             groupBoxCustomer.Controls.Add(label3);
             groupBoxCustomer.Controls.Add(label2);
             groupBoxCustomer.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBoxCustomer.Location = new Point(804, 108);
+            groupBoxCustomer.Location = new Point(962, 106);
             groupBoxCustomer.Name = "groupBoxCustomer";
-            groupBoxCustomer.Size = new Size(500, 150);
+            groupBoxCustomer.Size = new Size(409, 150);
             groupBoxCustomer.TabIndex = 2;
             groupBoxCustomer.TabStop = false;
             groupBoxCustomer.Text = "Customer Information ";
@@ -171,10 +172,11 @@
             // 
             // groupBoxSummary
             // 
+            groupBoxSummary.Controls.Add(tableLayoutPanelSummary);
             groupBoxSummary.Font = new Font("Cooper Black", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBoxSummary.Location = new Point(457, 309);
+            groupBoxSummary.Location = new Point(515, 359);
             groupBoxSummary.Name = "groupBoxSummary";
-            groupBoxSummary.Size = new Size(500, 192);
+            groupBoxSummary.Size = new Size(500, 180);
             groupBoxSummary.TabIndex = 3;
             groupBoxSummary.TabStop = false;
             groupBoxSummary.Text = "Invoice Summary";
@@ -194,7 +196,7 @@
             tableLayoutPanelSummary.Controls.Add(label6, 0, 2);
             tableLayoutPanelSummary.Controls.Add(label7, 0, 3);
             tableLayoutPanelSummary.Controls.Add(label4, 0, 0);
-            tableLayoutPanelSummary.Location = new Point(457, 351);
+            tableLayoutPanelSummary.Location = new Point(3, 26);
             tableLayoutPanelSummary.Name = "tableLayoutPanelSummary";
             tableLayoutPanelSummary.RowCount = 5;
             tableLayoutPanelSummary.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -296,7 +298,7 @@
             // btnCalculate
             // 
             btnCalculate.Font = new Font("Arial Rounded MT Bold", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCalculate.Location = new Point(661, 518);
+            btnCalculate.Location = new Point(737, 563);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(120, 33);
             btnCalculate.TabIndex = 4;
@@ -307,18 +309,18 @@
             // btnPrint
             // 
             btnPrint.Font = new Font("Microsoft YaHei", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnPrint.Location = new Point(27, 518);
+            btnPrint.Location = new Point(27, 563);
             btnPrint.Name = "btnPrint";
             btnPrint.Size = new Size(149, 33);
             btnPrint.TabIndex = 5;
             btnPrint.Text = "Print";
             btnPrint.UseVisualStyleBackColor = true;
+            btnPrint.Click += btnPrint_Click;
             // 
             // ZH_GenerateInvoice
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(tableLayoutPanelSummary);
             Controls.Add(btnPrint);
             Controls.Add(btnCalculate);
             Controls.Add(groupBoxSummary);
@@ -326,10 +328,11 @@
             Controls.Add(dataGridViewInvoice);
             Controls.Add(label1);
             Name = "ZH_GenerateInvoice";
-            Size = new Size(1317, 604);
+            Size = new Size(1317, 610);
             ((System.ComponentModel.ISupportInitialize)dataGridViewInvoice).EndInit();
             groupBoxCustomer.ResumeLayout(false);
             groupBoxCustomer.PerformLayout();
+            groupBoxSummary.ResumeLayout(false);
             tableLayoutPanelSummary.ResumeLayout(false);
             tableLayoutPanelSummary.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericDiscount).EndInit();

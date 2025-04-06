@@ -36,5 +36,10 @@ namespace Billing_Solution
         {
 
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
