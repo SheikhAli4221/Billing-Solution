@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesMan));
             pnlSidebar = new Panel();
+            button8 = new Button();
+            pictureBox1 = new PictureBox();
             pictureBox7 = new PictureBox();
             btnStockCheck = new Button();
             pictureBox10 = new PictureBox();
@@ -41,15 +43,13 @@
             btnGenerateInvoice = new Button();
             btnOrderHistory = new Button();
             pnlContent = new Panel();
-            button8 = new Button();
-            pictureBox1 = new PictureBox();
             pnlSidebar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pnlSidebar
@@ -69,17 +69,43 @@
             pnlSidebar.Controls.Add(btnOrderHistory);
             pnlSidebar.Dock = DockStyle.Left;
             pnlSidebar.Location = new Point(0, 0);
-            pnlSidebar.Margin = new Padding(4, 4, 4, 4);
+            pnlSidebar.Margin = new Padding(4);
             pnlSidebar.Name = "pnlSidebar";
             pnlSidebar.Size = new Size(282, 900);
             pnlSidebar.TabIndex = 0;
             pnlSidebar.Paint += pnlSidebar_Paint;
             // 
+            // button8
+            // 
+            button8.BackColor = Color.Transparent;
+            button8.BackgroundImageLayout = ImageLayout.None;
+            button8.FlatStyle = FlatStyle.Popup;
+            button8.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button8.Location = new Point(94, 32);
+            button8.Name = "button8";
+            button8.Size = new Size(158, 76);
+            button8.TabIndex = 24;
+            button8.Text = "Sales Man";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(13, 32);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(74, 76);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
+            pictureBox1.TabIndex = 23;
+            pictureBox1.TabStop = false;
+            // 
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(3, 461);
-            pictureBox7.Margin = new Padding(4, 4, 4, 4);
+            pictureBox7.Margin = new Padding(4);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(52, 61);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
@@ -107,8 +133,8 @@
             // pictureBox10
             // 
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(4, 601);
-            pictureBox10.Margin = new Padding(4, 4, 4, 4);
+            pictureBox10.Location = new Point(4, 828);
+            pictureBox10.Margin = new Padding(4);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(52, 50);
             pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
@@ -123,7 +149,7 @@
             btnLogOut.FlatStyle = FlatStyle.Flat;
             btnLogOut.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLogOut.ForeColor = Color.Black;
-            btnLogOut.Location = new Point(0, 588);
+            btnLogOut.Location = new Point(0, 815);
             btnLogOut.Margin = new Padding(0);
             btnLogOut.Name = "btnLogOut";
             btnLogOut.Padding = new Padding(6, 12, 6, 12);
@@ -137,7 +163,7 @@
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(4, 375);
-            pictureBox6.Margin = new Padding(4, 4, 4, 4);
+            pictureBox6.Margin = new Padding(4);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(52, 61);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -148,7 +174,7 @@
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(0, 290);
-            pictureBox5.Margin = new Padding(4, 4, 4, 4);
+            pictureBox5.Margin = new Padding(4);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(52, 61);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -159,7 +185,7 @@
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(0, 212);
-            pictureBox4.Margin = new Padding(4, 4, 4, 4);
+            pictureBox4.Margin = new Padding(4);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(52, 51);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -225,37 +251,11 @@
             pnlContent.BackColor = Color.WhiteSmoke;
             pnlContent.Dock = DockStyle.Fill;
             pnlContent.Location = new Point(282, 0);
-            pnlContent.Margin = new Padding(4, 4, 4, 4);
+            pnlContent.Margin = new Padding(4);
             pnlContent.Name = "pnlContent";
             pnlContent.Size = new Size(1420, 900);
             pnlContent.TabIndex = 2;
             pnlContent.Paint += pnlContent_Paint;
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.Transparent;
-            button8.BackgroundImageLayout = ImageLayout.None;
-            button8.FlatStyle = FlatStyle.Popup;
-            button8.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button8.Location = new Point(94, 32);
-            button8.Name = "button8";
-            button8.Size = new Size(158, 76);
-            button8.TabIndex = 24;
-            button8.Text = "Sales Man";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(13, 32);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(74, 76);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 23;
-            pictureBox1.TabStop = false;
             // 
             // SalesMan
             // 
@@ -272,12 +272,12 @@
             Text = "Salesman Dashboard";
             Load += SalesManDashboard_Load;
             pnlSidebar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
