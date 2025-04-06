@@ -82,8 +82,8 @@
             // 
             splitContainer1.Panel2.Controls.Add(Panel);
             splitContainer1.Panel2.Paint += splitContainer1_Panel2_Paint;
-            splitContainer1.Size = new Size(1702, 900);
-            splitContainer1.SplitterDistance = 284;
+            splitContainer1.Size = new Size(1293, 664);
+            splitContainer1.SplitterDistance = 289;
             splitContainer1.SplitterWidth = 6;
             splitContainer1.TabIndex = 0;
             // 
@@ -91,7 +91,7 @@
             // 
             pictureBox6.BackgroundImageLayout = ImageLayout.Center;
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(4, 669);
+            pictureBox6.Location = new Point(4, 536);
             pictureBox6.Margin = new Padding(4, 5, 4, 5);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(41, 49);
@@ -105,7 +105,7 @@
             button6.BackgroundImageLayout = ImageLayout.None;
             button6.FlatStyle = FlatStyle.Popup;
             button6.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button6.Location = new Point(0, 669);
+            button6.Location = new Point(-9, 536);
             button6.Name = "button6";
             button6.Size = new Size(322, 49);
             button6.TabIndex = 28;
@@ -119,18 +119,19 @@
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(109, 36);
+            button1.Location = new Point(105, 37);
             button1.Name = "button1";
             button1.Size = new Size(111, 49);
             button1.TabIndex = 22;
             button1.Text = "Admin";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox3
             // 
             pictureBox3.BackgroundImageLayout = ImageLayout.Center;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(4, 323);
+            pictureBox3.Location = new Point(4, 236);
             pictureBox3.Margin = new Padding(4, 5, 4, 5);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(41, 49);
@@ -142,7 +143,7 @@
             // 
             pictureBox2.BackgroundImageLayout = ImageLayout.Center;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(4, 236);
+            pictureBox2.Location = new Point(4, 149);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(41, 49);
@@ -154,7 +155,7 @@
             // 
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(28, 20);
+            pictureBox1.Location = new Point(13, 23);
             pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(74, 76);
@@ -166,7 +167,7 @@
             // 
             pictureBox4.BackgroundImageLayout = ImageLayout.Center;
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(4, 407);
+            pictureBox4.Location = new Point(4, 320);
             pictureBox4.Margin = new Padding(4, 5, 4, 5);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(41, 49);
@@ -178,7 +179,7 @@
             // 
             pictureBox5.BackgroundImageLayout = ImageLayout.Center;
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(4, 486);
+            pictureBox5.Location = new Point(4, 399);
             pictureBox5.Margin = new Padding(4, 5, 4, 5);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(41, 49);
@@ -192,7 +193,7 @@
             button2.BackgroundImageLayout = ImageLayout.None;
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(0, 236);
+            button2.Location = new Point(0, 149);
             button2.Name = "button2";
             button2.Size = new Size(322, 49);
             button2.TabIndex = 23;
@@ -206,7 +207,7 @@
             button3.BackgroundImageLayout = ImageLayout.None;
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(3, 323);
+            button3.Location = new Point(3, 236);
             button3.Name = "button3";
             button3.Size = new Size(284, 49);
             button3.TabIndex = 24;
@@ -220,7 +221,7 @@
             button4.BackgroundImageLayout = ImageLayout.None;
             button4.FlatStyle = FlatStyle.Popup;
             button4.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.Location = new Point(0, 407);
+            button4.Location = new Point(0, 320);
             button4.Name = "button4";
             button4.Size = new Size(322, 49);
             button4.TabIndex = 25;
@@ -234,7 +235,7 @@
             button5.BackgroundImageLayout = ImageLayout.None;
             button5.FlatStyle = FlatStyle.Popup;
             button5.Font = new Font("Arial Rounded MT Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button5.Location = new Point(0, 486);
+            button5.Location = new Point(0, 399);
             button5.Name = "button5";
             button5.Size = new Size(287, 49);
             button5.TabIndex = 26;
@@ -247,7 +248,7 @@
             Panel.Dock = DockStyle.Fill;
             Panel.Location = new Point(0, 0);
             Panel.Name = "Panel";
-            Panel.Size = new Size(1412, 900);
+            Panel.Size = new Size(998, 664);
             Panel.TabIndex = 0;
             Panel.Paint += panel1_Paint;
             // 
@@ -255,7 +256,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1702, 900);
+            ClientSize = new Size(1293, 664);
             Controls.Add(splitContainer1);
             Margin = new Padding(4, 5, 4, 5);
             Name = "Admin";
