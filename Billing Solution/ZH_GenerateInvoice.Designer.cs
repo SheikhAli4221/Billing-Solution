@@ -30,28 +30,28 @@
         {
             label1 = new Label();
             dataGridViewInvoice = new DataGridView();
-            groupBoxCustomer = new GroupBox();
             ColumnItemName = new DataGridViewComboBoxColumn();
             ColumnDescription = new DataGridViewTextBoxColumn();
             ColumnQuantity = new DataGridViewTextBoxColumn();
             ColumnUnitPrice = new DataGridViewTextBoxColumn();
             ColumnTotal = new DataGridViewTextBoxColumn();
-            label2 = new Label();
+            groupBoxCustomer = new GroupBox();
+            maskedPhone = new MaskedTextBox();
             txtCustomerName = new TextBox();
             label3 = new Label();
-            maskedPhone = new MaskedTextBox();
+            label2 = new Label();
             groupBoxSummary = new GroupBox();
             tableLayoutPanelSummary = new TableLayoutPanel();
-            label4 = new Label();
             label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
             label8 = new Label();
             textBoxSubTotal = new TextBox();
             numericDiscount = new NumericUpDown();
             textBoxGrandtotal = new TextBox();
             textBoxAmountGiven = new TextBox();
             textBox1 = new TextBox();
+            label6 = new Label();
+            label7 = new Label();
+            label4 = new Label();
             btnCalculate = new Button();
             btnPrint = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewInvoice).BeginInit();
@@ -81,20 +81,6 @@
             dataGridViewInvoice.Size = new Size(740, 250);
             dataGridViewInvoice.TabIndex = 1;
             dataGridViewInvoice.CellContentClick += dataGridViewInvoice_CellContentClick;
-            // 
-            // groupBoxCustomer
-            // 
-            groupBoxCustomer.Controls.Add(maskedPhone);
-            groupBoxCustomer.Controls.Add(txtCustomerName);
-            groupBoxCustomer.Controls.Add(label3);
-            groupBoxCustomer.Controls.Add(label2);
-            groupBoxCustomer.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBoxCustomer.Location = new Point(804, 108);
-            groupBoxCustomer.Name = "groupBoxCustomer";
-            groupBoxCustomer.Size = new Size(500, 150);
-            groupBoxCustomer.TabIndex = 2;
-            groupBoxCustomer.TabStop = false;
-            groupBoxCustomer.Text = "Customer Information ";
             // 
             // ColumnItemName
             // 
@@ -134,15 +120,27 @@
             ColumnTotal.Name = "ColumnTotal";
             ColumnTotal.ReadOnly = true;
             // 
-            // label2
+            // groupBoxCustomer
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Yu Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(18, 32);
-            label2.Name = "label2";
-            label2.Size = new Size(143, 22);
-            label2.TabIndex = 0;
-            label2.Text = "Customer Name";
+            groupBoxCustomer.Controls.Add(maskedPhone);
+            groupBoxCustomer.Controls.Add(txtCustomerName);
+            groupBoxCustomer.Controls.Add(label3);
+            groupBoxCustomer.Controls.Add(label2);
+            groupBoxCustomer.Font = new Font("Nirmala UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBoxCustomer.Location = new Point(804, 108);
+            groupBoxCustomer.Name = "groupBoxCustomer";
+            groupBoxCustomer.Size = new Size(500, 150);
+            groupBoxCustomer.TabIndex = 2;
+            groupBoxCustomer.TabStop = false;
+            groupBoxCustomer.Text = "Customer Information ";
+            // 
+            // maskedPhone
+            // 
+            maskedPhone.Location = new Point(167, 77);
+            maskedPhone.Mask = "(999) 000-0000";
+            maskedPhone.Name = "maskedPhone";
+            maskedPhone.Size = new Size(125, 27);
+            maskedPhone.TabIndex = 2;
             // 
             // txtCustomerName
             // 
@@ -161,13 +159,15 @@
             label3.TabIndex = 0;
             label3.Text = "Phone Number";
             // 
-            // maskedPhone
+            // label2
             // 
-            maskedPhone.Location = new Point(167, 77);
-            maskedPhone.Mask = "(999) 000-0000";
-            maskedPhone.Name = "maskedPhone";
-            maskedPhone.Size = new Size(125, 27);
-            maskedPhone.TabIndex = 2;
+            label2.AutoSize = true;
+            label2.Font = new Font("Yu Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(18, 32);
+            label2.Name = "label2";
+            label2.Size = new Size(143, 22);
+            label2.TabIndex = 0;
+            label2.Text = "Customer Name";
             // 
             // groupBoxSummary
             // 
@@ -205,16 +205,6 @@
             tableLayoutPanelSummary.Size = new Size(500, 150);
             tableLayoutPanelSummary.TabIndex = 0;
             // 
-            // label4
-            // 
-            label4.Font = new Font("Nirmala Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(3, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(229, 21);
-            label4.TabIndex = 0;
-            label4.Text = "Subtotal";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // label5
             // 
             label5.Font = new Font("Nirmala Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -224,26 +214,6 @@
             label5.TabIndex = 0;
             label5.Text = "Discount %";
             label5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            label6.Font = new Font("Nirmala Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(3, 60);
-            label6.Name = "label6";
-            label6.Size = new Size(244, 30);
-            label6.TabIndex = 0;
-            label6.Text = "Grandtotal";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            label7.Font = new Font("Nirmala Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(3, 90);
-            label7.Name = "label7";
-            label7.Size = new Size(244, 20);
-            label7.TabIndex = 0;
-            label7.Text = "Amount Given";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label8
             // 
@@ -292,6 +262,36 @@
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(244, 27);
             textBox1.TabIndex = 1;
+            // 
+            // label6
+            // 
+            label6.Font = new Font("Nirmala Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(3, 60);
+            label6.Name = "label6";
+            label6.Size = new Size(244, 30);
+            label6.TabIndex = 0;
+            label6.Text = "Grandtotal";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            label7.Font = new Font("Nirmala Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(3, 90);
+            label7.Name = "label7";
+            label7.Size = new Size(244, 20);
+            label7.TabIndex = 0;
+            label7.Text = "Amount Given";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            label4.Font = new Font("Nirmala Text", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(3, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(229, 21);
+            label4.TabIndex = 0;
+            label4.Text = "Subtotal";
+            label4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnCalculate
             // 
