@@ -36,13 +36,16 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.BackColor = Color.SlateBlue;
+            button1.BackColor = Color.Transparent;
             button1.Font = new Font("Arial Narrow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(214, 530);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(734, 660);
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
             button1.Size = new Size(250, 63);
@@ -56,7 +59,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Copperplate Gothic Bold", 34.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(393, 38);
+            label1.Location = new Point(521, 38);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(644, 77);
@@ -66,7 +69,8 @@
             // 
             // Username
             // 
-            Username.Location = new Point(299, 318);
+            Username.BackColor = SystemColors.HighlightText;
+            Username.Location = new Point(783, 430);
             Username.Margin = new Padding(4, 5, 4, 5);
             Username.Name = "Username";
             Username.Size = new Size(377, 31);
@@ -75,7 +79,8 @@
             // 
             // Password
             // 
-            Password.Location = new Point(299, 405);
+            Password.BackColor = SystemColors.HighlightText;
+            Password.Location = new Point(783, 517);
             Password.Margin = new Padding(4, 5, 4, 5);
             Password.Name = "Password";
             Password.Size = new Size(377, 31);
@@ -86,7 +91,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Copperplate Gothic Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(80, 320);
+            label2.Location = new Point(564, 432);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(197, 26);
@@ -98,7 +103,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Copperplate Gothic Bold", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(80, 407);
+            label3.Location = new Point(564, 519);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(150, 26);
@@ -110,12 +115,22 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Copperplate Gothic Bold", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(80, 210);
+            label4.Location = new Point(597, 308);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(520, 40);
             label4.TabIndex = 10;
             label4.Text = "Enter your login details";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(465, 242);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(812, 550);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
             // 
             // Login
             // 
@@ -123,7 +138,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1703, 900);
+            ClientSize = new Size(1702, 900);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -131,11 +146,13 @@
             Controls.Add(Username);
             Controls.Add(label1);
             Controls.Add(button1);
+            Controls.Add(pictureBox1);
             Margin = new Padding(4, 3, 4, 3);
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             Load += Login_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -149,5 +166,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private PictureBox pictureBox1;
     }
 }
