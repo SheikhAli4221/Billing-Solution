@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesMan));
             pnlSidebar = new Panel();
+            pictureBox7 = new PictureBox();
+            btnStockCheck = new Button();
             pictureBox10 = new PictureBox();
             btnLogOut = new Button();
-            pictureBox7 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -45,10 +46,9 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             pnlContent = new Panel();
-            btnStockCheck = new Button();
             pnlSidebar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -81,6 +81,35 @@
             pnlSidebar.TabIndex = 0;
             pnlSidebar.Paint += pnlSidebar_Paint;
             // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(4, 480);
+            pictureBox7.Margin = new Padding(4);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(52, 61);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 15;
+            pictureBox7.TabStop = false;
+            // 
+            // btnStockCheck
+            // 
+            btnStockCheck.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnStockCheck.BackColor = Color.Transparent;
+            btnStockCheck.FlatAppearance.BorderSize = 0;
+            btnStockCheck.FlatStyle = FlatStyle.Flat;
+            btnStockCheck.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnStockCheck.ForeColor = SystemColors.ActiveBorder;
+            btnStockCheck.Location = new Point(30, 480);
+            btnStockCheck.Margin = new Padding(0);
+            btnStockCheck.Name = "btnStockCheck";
+            btnStockCheck.Padding = new Padding(6, 12, 6, 12);
+            btnStockCheck.Size = new Size(225, 60);
+            btnStockCheck.TabIndex = 14;
+            btnStockCheck.Text = "Check Stock";
+            btnStockCheck.UseVisualStyleBackColor = false;
+            btnStockCheck.Click += btnStockCheck_Click;
+            // 
             // pictureBox10
             // 
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
@@ -110,17 +139,6 @@
             btnLogOut.TextAlign = ContentAlignment.MiddleLeft;
             btnLogOut.UseVisualStyleBackColor = false;
             btnLogOut.Click += btnLogOut_Click;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(4, 400);
-            pictureBox7.Margin = new Padding(4);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(52, 61);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 15;
-            pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -283,24 +301,6 @@
             pnlContent.TabIndex = 2;
             pnlContent.Paint += pnlContent_Paint;
             // 
-            // btnStockCheck
-            // 
-            btnStockCheck.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnStockCheck.BackColor = Color.FromArgb(64, 64, 64);
-            btnStockCheck.FlatAppearance.BorderSize = 0;
-            btnStockCheck.FlatStyle = FlatStyle.Flat;
-            btnStockCheck.Font = new Font("Arial", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnStockCheck.ForeColor = SystemColors.ActiveBorder;
-            btnStockCheck.Location = new Point(9, 401);
-            btnStockCheck.Margin = new Padding(0);
-            btnStockCheck.Name = "btnStockCheck";
-            btnStockCheck.Padding = new Padding(6, 12, 6, 12);
-            btnStockCheck.Size = new Size(225, 60);
-            btnStockCheck.TabIndex = 14;
-            btnStockCheck.Text = "  Check Stock";
-            btnStockCheck.UseVisualStyleBackColor = false;
-            btnStockCheck.Click += btnStockCheck_Click;
-            // 
             // SalesMan
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -317,8 +317,8 @@
             Load += SalesManDashboard_Load;
             pnlSidebar.ResumeLayout(false);
             pnlSidebar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
