@@ -71,9 +71,10 @@
             label2.AutoSize = true;
             label2.Location = new Point(312, 173);
             label2.Name = "label2";
-            label2.Size = new Size(78, 20);
+            label2.Size = new Size(45, 20);
             label2.TabIndex = 1;
-            label2.Text = "Username:";
+            label2.Text = "CNIC:";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -171,12 +172,12 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
-            label5.Font = new Font("Arial Rounded MT Bold", 16F);
-            label5.Location = new Point(396, 28);
+            label5.Font = new Font("Arial Rounded MT Bold", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(367, 25);
             label5.Name = "label5";
-            label5.Size = new Size(444, 32);
+            label5.Size = new Size(463, 32);
             label5.TabIndex = 0;
-            label5.Text = "                 Managing Users              ";
+            label5.Text = "                • Managing Users              ";
             // 
             // dataGridView1
             // 
@@ -185,7 +186,7 @@
             dataGridView1.Location = new Point(213, 322);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(805, 350);
+            dataGridView1.Size = new Size(814, 382);
             dataGridView1.TabIndex = 13;
             // 
             // Column1
@@ -204,7 +205,7 @@
             // 
             // Column3
             // 
-            Column3.HeaderText = "Username:";
+            Column3.HeaderText = "CNIC:";
             Column3.MinimumWidth = 6;
             Column3.Name = "Column3";
             Column3.Width = 125;
@@ -287,7 +288,7 @@
             Controls.Add(label1);
             Margin = new Padding(2);
             Name = "UC_ManagingUsers";
-            Size = new Size(1212, 705);
+            Size = new Size(1212, 726);
             Load += UC_ManagingUsers_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
